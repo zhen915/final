@@ -31,7 +31,7 @@ stc.html(html_temp)
 # df_original.to_pickle('kbars_2330_2022-01-01-2022-11-18.pkl')
 
 ## 读取Pickle文件
-df_original = pd.read_pickle('STOCK_DAY_1216_202405.xlsx')
+df_original = pd.read_pickle('kbars_2330_2020-01-01-2024-06-20.xlsx')
 
 
 #df.columns  ## Index(['Unnamed: 0', 'time', 'open', 'low', 'high', 'close', 'volume','amount'], dtype='object')
@@ -46,9 +46,9 @@ df_original = df_original.drop('Unnamed: 0',axis=1)
 
 
 ##### 選擇資料區間
-st.subheader("選擇開始與結束的日期, 區間:2024-05-02 至 2024-05-31")
-start_date = st.text_input('選擇開始日期 (日期格式: 2024-05-02)', '2024-05-02')
-end_date = st.text_input('選擇結束日期 (日期格式: 2024-05-31)', '2024-05-31')
+st.subheader("選擇開始與結束的日期, 區間:2020-01-01 至 2024-06-20")
+start_date = st.text_input('選擇開始日期 (日期格式: 2020-01-01)', '2020-01-01')
+end_date = st.text_input('選擇結束日期 (日期格式: 2024-06-20)', '2024-06-20')
 start_date = datetime.datetime.strptime(start_date,'%Y-%m-%d')
 end_date = datetime.datetime.strptime(end_date,'%Y-%m-%d')
 # 使用条件筛选选择时间区间的数据
