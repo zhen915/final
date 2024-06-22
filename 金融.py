@@ -14,9 +14,9 @@ import streamlit.components.v1 as stc
 
 ###### (1) 開始設定 ######
 html_temp = """
-		<div style="background-color:purple;padding:10px;border-radius:10px">
+		<div style="background-color:#D3A4FF;padding:10px;border-radius:10px">
 		<h1 style="color:black;text-align:center;">金融期末 </h1>
-		<h2 style="color:black;text-align:center;">Final </h2>
+		<h2 style="color:#5B5B5B;text-align:center;">Final </h2>
 		</div>
 		"""
 stc.html(html_temp)
